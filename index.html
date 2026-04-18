@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dirgh Patel | Cybersecurity Analyst | SOC Analyst</title>
+<title>Dirgh Patel's Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet">
@@ -370,8 +370,7 @@ h1.hero-name{font-size:2.4rem}
 
     <!-- TAB 0: SOC FLOW -->
     <div class="tab-panel active" id="tp0">
-      <div style="font-family:var(--mono);font-size:.7rem;color:var(--accent2);letter-spacing:.12em;text-transform:uppercase;margin-bottom:1.5rem">// Version A - SOC / Cybersecurity roles</div>
-      <div class="flow-stages">
+        <div class="flow-stages">
         <div class="flow-stage"><div class="stage-num">01</div><div class="stage-name">Detect &amp; Ingest</div><div class="stage-skills"><div class="stage-skill hl">Wazuh SIEM</div><div class="stage-skill hl">Azure Sentinel</div><div class="stage-skill">CrowdStrike EDR</div><div class="stage-skill">Suricata IDS/IPS</div><div class="stage-skill">Sysmon</div><div class="stage-skill">Log ingestion</div></div></div>
         <div class="flow-stage"><div class="stage-num">02</div><div class="stage-name">Triage &amp; Analyze</div><div class="stage-skills"><div class="stage-skill hl">Alert triage</div><div class="stage-skill hl">MITRE ATT&amp;CK</div><div class="stage-skill">Log correlation</div><div class="stage-skill">IOC enrichment</div><div class="stage-skill">VirusTotal</div><div class="stage-skill">Phishing analysis</div></div></div>
         <div class="flow-stage"><div class="stage-num">03</div><div class="stage-name">Respond &amp; Contain</div><div class="stage-skills"><div class="stage-skill hl">Incident response</div><div class="stage-skill hl">Endpoint forensics</div><div class="stage-skill">Runbook execution</div><div class="stage-skill">Containment</div><div class="stage-skill">Eradication</div><div class="stage-skill">Active Directory</div></div></div>
@@ -508,7 +507,7 @@ h1.hero-name{font-size:2.4rem}
 <script>
 document.querySelectorAll("nav a").forEach(a=>a.addEventListener("click",()=>document.querySelector("nav ul").classList.remove("open")));
 
-const roles=["SOC Analyst","Cybersecurity Analyst","Security Operations Analyst","Incident Responder","IT Support Analyst","Threat Monitoring Analyst"];
+const roles=["SOC Analyst","Cybersecurity Analyst","GRC Consultant","Security Operations","Incident Responder","IT Support","Service Desk","Vulnerability and Penetration testing"];
 let ri=0,ci=0,del=false;
 const el=document.getElementById("typed");
 function type(){const w=roles[ri];if(!del){el.textContent=w.substring(0,++ci);if(ci===w.length){del=true;setTimeout(type,1800);return;}}else{el.textContent=w.substring(0,--ci);if(ci===0){del=false;ri=(ri+1)%roles.length;}}setTimeout(type,del?40:75);}
